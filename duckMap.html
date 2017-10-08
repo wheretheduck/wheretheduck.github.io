@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        height: 100%;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var myDucky = {lat: 28.602100, lng: -81.198700};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 20,
+          center: myDucky
+        });
+        var image = 'https://wheretheduck.github.io/ducky40/duckling40.png';
+        var marker = new google.maps.Marker({
+          position: myDucky,
+          map: map,
+          icon: image
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgBZAwywa-JtaWUIB9cj5NeGAtrgqLIqg&callback=initMap">
+    </script>
+  </body>
+</html>
