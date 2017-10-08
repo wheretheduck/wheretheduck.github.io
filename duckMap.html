@@ -15,9 +15,9 @@
         var myDucky = {lat: 28.602100, lng: -81.198700};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 20,
-          center: myDucky,
-          mapTypeId: 'satellite'
+          center: myDucky
         });
+        map.setMapTypeId('satellite');
         var image = 'https://wheretheduck.github.io/ducky40/duckling40.png';
         var marker = new google.maps.Marker({
           position: myDucky,
