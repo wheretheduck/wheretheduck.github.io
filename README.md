@@ -1,4 +1,4 @@
-# Project Title
+# wheretheduck
 
 A project developed during the 2017 UCF Hackathon. This project was made to power a robot that would scan its surroundings looking for its "mama". Once located it would approach quacking the whole way. It was trained on images of a group member's face. OpenCV was used for facial recognition hosted on a raspberry pi. The arduino was used to receive steering and speed commands which it would interpret and send to the motors/servos.
 
